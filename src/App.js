@@ -3,6 +3,7 @@ import FaqSection from "./Components/FAQ/FaqSection";
 import MainSection from "./Components/MainSection";
 import MiddleSection from "./Components/MiddleSection";
 import Navbar from "./Components/Navbar";
+import Subscribe from "./Components/Subscribe";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <MainSection />
       <MiddleSection />
       <FaqSection />
+      <Subscribe />
     </>
   );
 }
