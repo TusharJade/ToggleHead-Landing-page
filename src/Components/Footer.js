@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="lg:absolute lg:left-14 xl:left-20 lg:top-6 xl:top-10 text-white flex order-2">
           <div>
             <div className="text-[22px] font-semibold">Contact us</div>
-            <div className="text-[13px] max-w-[300px] text-[#d3d3d3] mt-5 flex flex-col gap-3">
+            <div className="text-[14.5px] md:text-[13px] max-w-[300px] text-[#d3d3d3] mt-5 flex flex-col gap-3">
               <div> Address: amet, consetetur sadipscing elitr, sed diam </div>
               <div>Email id: eirmod tempor invidunt ut labore et dolore </div>
               <div>Phone no: 123456789</div>
@@ -28,8 +28,8 @@ const Footer = () => {
             <div className="text-[22px] font-semibold text-center lg:block hidden">
               Follow us
             </div>
-            <div className="text-[22px] max-w-[240px] xl:max-w-[300px] text-white mt-5 flex justify-center items-center gap-8">
-              <FaFacebookF className="cursor-pointer" />
+            <div className="text-[22px] max-w-[300px] text-white mt-5 flex justify-center items-center gap-8">
+              <FaFacebookF className="cursor-pointer " />
               <FaLinkedin className="cursor-pointer" />
               <FaInstagram className="cursor-pointer" />
               <FaTwitter className="cursor-pointer" />
@@ -42,7 +42,7 @@ const Footer = () => {
         <div className="lg:absolute lg:right-14 xl:right-20 lg:top-6 xl:top-10 text-white flex order-3">
           <div>
             <div className="text-[22px] font-semibold">Head Office</div>
-            <div className="text-[13px] max-w-[350px] text-[#d3d3d3] mt-5 flex flex-col gap-3 justify-start items-start">
+            <div className="text-[14.5px] md:text-[13px] max-w-[350px] text-[#d3d3d3] mt-5 flex flex-col gap-3 justify-start items-start">
               <div className="flex items-center justify-center gap-2">
                 <IoLocationSharp className="text-[30px]" /> Lorem ipsum dolor
                 sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
