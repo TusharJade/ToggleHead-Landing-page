@@ -1,9 +1,33 @@
+import { useEffect, useState } from "react";
 import { BiSolidRightArrow } from "react-icons/bi";
 
 const MainSection = () => {
+  const [imageSrc, setImageSrc] = useState(
+    window.innerWidth > 1024
+      ? "./assets/landing-page.svg"
+      : "https://img.freepik.com/premium-vector/businessman-looking-oppotunity_36994-23.jpg?w=900"
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1024) {
+        setImageSrc("./assets/landing-page.svg");
+      } else {
+        setImageSrc(
+          "https://img.freepik.com/premium-vector/businessman-looking-oppotunity_36994-23.jpg?w=900"
+        );
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
-    <section className="bg-[#EBEBEB] h-[23rem] flex justify-between items-center">
-      <div className="ml-20">
+    <section className="lg:bg-[#EBEBEB] lg:h-[23rem] flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center">
+      <div className="lg:ml-20 mt-6 mb-0 mx-auto text-center lg:text-start lg:mx-0">
         <div className="text-[#12406F] text-[1.5rem] font-bold">
           Lorem ipsum
         </div>
@@ -13,12 +37,16 @@ const MainSection = () => {
           sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
           rebum. Stet clita kasd
         </p>
-        <button className="bg-[#12406F] text-white text-[13px] rounded-lg flex gap-1.5 justify-center items-center py-2 px-6 mt-3">
+        <button className="bg-[#12406F] text-white text-[13px] mx-auto lg:mx-0 rounded-lg flex gap-1.5 justify-center items-center py-2 px-6 mt-3">
           Know More <BiSolidRightArrow className="text-[12px]" />
         </button>
       </div>
 
-      <img className="h-[23rem]" src="./assets/landing-page.svg" alt="error" />
+      <img
+        className="w-full h-[30rem] lg:w-auto lg:h-[23rem]"
+        src={imageSrc}
+        alt="error"
+      />
     </section>
   );
 };

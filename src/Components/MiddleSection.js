@@ -3,8 +3,8 @@ import { FaCircleChevronRight } from "react-icons/fa6";
 const MiddleSection = () => {
   return (
     <>
-      <section className="ml-20 my-10 flex">
-        <div className="w-[220px]">
+      <section className="ml-0 lg:ml-20 my-10 flex justify-center">
+        <div className="w-[220px] hidden lg:block">
           <div className="text-[#12406F] text-[1.5rem] font-bold leading-8">
             Upcoming Examinations
           </div>
@@ -13,9 +13,9 @@ const MiddleSection = () => {
           </div>
         </div>
 
-        <div className="border-l border-[#D1D1D1] h-[120px] my-auto mx-[4rem]"></div>
+        <div className="hidden lg:block border-l border-[#D1D1D1] h-[120px] my-auto mx-[2rem] xl:mx-[4rem]"></div>
 
-        <div className="flex gap-16">
+        <div className="flex flex-col md:flex-row gap-10 xl:gap-16">
           {[
             { date: "02th October 2014", text: "Level 1 exam" },
             { date: "Nov-Dec 2016 Level", text: "2 Lorem Ipsum" },
@@ -39,7 +39,7 @@ const MiddleSection = () => {
         </div>
       </section>
 
-      <section className="scroller mt-4 mb-10 pl-20 flex overflow-x-auto space-x-4">
+      <section className="scroller mt-4 mb-10 pl-8 md:pl-20 flex overflow-x-auto gap-6">
         {Array(7)
           .fill(0)
           .map((_, i) => (
@@ -59,7 +59,7 @@ const MiddleSection = () => {
           ))}
       </section>
 
-      <section className="bg-[#F6F6F6] flex flex-row py-9 gap-24 px-20">
+      <section className="bg-[#F6F6F6] grid grid-cols-2 lg:flex lg:flex-row py-9 gap-8 md:gap-10 lg:gap-16 xl:gap-24 px-8 md:px-20">
         {[
           {
             one: "Lorem ipsum",
