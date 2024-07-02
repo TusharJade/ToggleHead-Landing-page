@@ -65,7 +65,6 @@ const Navbar = () => {
               className="text-white py-4 flex items-center justify-center text-[14px] gap-0.5 w-full border-b border-white"
             >
               <div>{item}</div>
-              <FaAngleDown className="mt-0.5" />
             </div>
           ))}
           <button className="text-[#12406F] bg-white rounded-[10px] px-4 py-1.5 text-[14px] font-semibold my-4">

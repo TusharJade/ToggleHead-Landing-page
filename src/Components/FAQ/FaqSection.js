@@ -2,7 +2,7 @@ import Options from "./Options";
 
 const FaqSection = () => {
   return (
-    <section className="mx-20 mb-10">
+    <section className="mx-8 md:mx-20 mb-10">
       <div className="text-center text-[24px] text-[#12406F] font-bold mt-7 mb-12">
         FAQ
       </div>

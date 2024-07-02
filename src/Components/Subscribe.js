@@ -18,7 +18,7 @@ const Subscribe = () => {
           />
           <button className="bg-[#12406F] text-white text-sm lg:text-[13px] rounded-[0.8rem] flex items-center justify-center py-3 lg:py-2 px-6">
             Subscribe Now{" "}
-            <BiSolidRightArrow className="text-[12px] lg:text-[14px]" />
+            <BiSolidRightArrow className="text-[12px] lg:text-[14px] ml-1 mt-0.5" />
           </button>
         </div>
       </div>

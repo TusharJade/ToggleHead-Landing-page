@@ -31,7 +31,7 @@ const MainSection = () => {
         <div className="text-[#12406F] text-[1.5rem] font-bold">
           Lorem ipsum
         </div>
-        <p className="text-[#525252] text-[13px] mt-2 w-[360px] font-medium">
+        <p className="text-[#525252] text-[13px] mt-2 sm:w-[360px] font-medium mx-4">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
