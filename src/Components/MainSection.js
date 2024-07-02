@@ -2,7 +2,7 @@ import { BiSolidRightArrow } from "react-icons/bi";
 
 const MainSection = () => {
   return (
-    <div className="bg-[#EBEBEB] h-[23rem] flex justify-between items-center">
+    <section className="bg-[#EBEBEB] h-[23rem] flex justify-between items-center">
       <div className="ml-20">
         <div className="text-[#12406F] text-[1.5rem] font-bold">
           Lorem ipsum
@@ -19,7 +19,7 @@ const MainSection = () => {
       </div>
 
       <img className="h-[23rem]" src="./assets/landing-page.svg" alt="error" />
-    </div>
+    </section>
   );
 };
 
